@@ -7,7 +7,7 @@ class ZooManagement{
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
+           //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
        // System.out.printf("Hello and welcome!");
         System.out.println("my zoo comporte 20 cages");
@@ -31,6 +31,17 @@ public class Main {
         System.out.println(zoo.zooName + " comporte " + zoo.nbrCages + " cages");
 
         sc.close();
+        Animal lion = new Animal("Félins", "Simba", 4, true);
+        Zoo myZoo = new Zoo("safari", "africa", 24);
+
+        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
+        // to see how IntelliJ IDEA suggests fixing it.
+        System.out.println("Zoo créé : " + myZoo.name + " situé à " + myZoo.city);
+        System.out.println("Animal créé : "  + lion.name + " famille de " + lion.family );
+        myZoo.displayZoo();
+        System.out.println(myZoo);
+        lion.displayAnimal();
+        System.out.println(lion);
     }
 }
 
